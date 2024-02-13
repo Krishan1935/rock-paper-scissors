@@ -21,19 +21,19 @@
             <div class="flex justify-center items-center gap-4 sm:gap-6 md:gap-8 lg:gap-10 w-full my-2 sm:my-4 md:my-6 lg:my-8">
 
                 <!-- rock -->
-                <div class="cursor-pointer flex flex-col text-slate-200 font-[500] text-center hover:scale-105 transition-all duration-100">
+                <div data-rock  class="cursor-pointer flex flex-col text-slate-200 font-[500] text-center hover:scale-105 transition-all duration-100">
                     <img class="w-[70px] sm:w-[100px] md:w-[130px] lg:w-[160px] invert" src="images/rock.jpg" alt="">
                     <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl">Rock</p>
                 </div>
 
                 <!-- paper -->
-                <div class="cursor-pointer flex flex-col text-slate-200 font-[500] text-center hover:scale-105 transition-all duration-100">
+                <div data-paper class="cursor-pointer flex flex-col text-slate-200 font-[500] text-center hover:scale-105 transition-all duration-100">
                     <img class="w-[70px] sm:w-[100px] md:w-[130px] lg:w-[160px] invert" src="images/paper.jpg" alt="">
                     <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl">Paper</p>
                 </div>
 
                 <!-- scissors -->
-                <div class="cursor-pointer flex flex-col text-slate-200 font-[500] text-center hover:scale-105 transition-all duration-100">
+                <div data-scissor class="cursor-pointer flex flex-col text-slate-200 font-[500] text-center hover:scale-105 transition-all duration-100">
                     <img class="w-[70px] sm:w-[100px] md:w-[130px] lg:w-[160px] invert" src="images/scissor.jpg" alt="">
                     <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl">Scissors</p>
                 </div>
@@ -42,18 +42,18 @@
             <!-- move display -->
             <div class="flex gap-4 sm:gap-6 md:gap-8 lg:gap-10 justify-center items-center text-center">
                 <!-- your move -->
-                <div class="flex flex-col justify-center items-center gap-1 border-2 min-w-[140px] min-h-[140px] sm:min-w-[160px] sm:min-h-[160px] md:min-w-[180px] md:min-h-[180px] lg:min-w-[200px] lg:min-h-[200px] rounded-md">
+                <div  class="flex flex-col justify-center items-center gap-1 border-2 min-w-[140px] min-h-[140px] sm:min-w-[160px] sm:min-h-[160px] md:min-w-[180px] md:min-h-[180px] lg:min-w-[200px] lg:min-h-[200px] rounded-md">
                     <h2 class="text-base sm:text-xl md:text-2xl lg:text-3xl text-yellow-200">Your move</h2>
-                    <img class="w-[70px] sm:w-[100px] md:w-[130px] lg:w-[160px] invert animate-spin" src="images/rock.jpg" alt="">
+                    <img data-userMove class="w-[70px] sm:w-[100px] md:w-[130px] lg:w-[160px] invert animate-spin" src="images/rock.jpg" alt="">
                 </div>
 
                 <!-- vs -->
-                <h1 class="text-white font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl">V/S</h1>
+                <h1 data-whowon class="text-white font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl">V/S</h1>
 
                 <!-- computer move -->
-                <div class="flex flex-col justify-center items-center gap-1 min-w-[140px] min-h-[140px] sm:min-w-[160px] sm:min-h-[160px] md:min-w-[180px] md:min-h-[180px] lg:min-w-[200px] lg:min-h-[200px] border-2 rounded-md ">
+                <div  class="flex flex-col justify-center items-center gap-1 min-w-[140px] min-h-[140px] sm:min-w-[160px] sm:min-h-[160px] md:min-w-[180px] md:min-h-[180px] lg:min-w-[200px] lg:min-h-[200px] border-2 rounded-md ">
                      <h2 class="text-base sm:text-xl md:text-2xl lg:text-3xl text-yellow-200">Computer's Move</h2>
-                     <img class="w-[70px] sm:w-[100px] md:w-[130px] lg:w-[160px] invert animate-spin" src="images/rock.jpg" alt="">
+                     <img data-computerMove class="w-[70px] sm:w-[100px] md:w-[130px] lg:w-[160px] invert animate-spin" src="images/rock.jpg" alt="">
                 </div>
             </div>
 
@@ -65,8 +65,9 @@
 
                     <!-- wins and loses -->
                     <div>
-                        <p>Wins: <span></span></p>
-                        <p>Loses: <span></span></p>
+                        <p>Wins: <span data-userWins></span></p>
+                        <p>Loses: <span data-userLoses></span></p>
+                        <p>Ties: <span data-userTies></span></p>
                     </div>
                 </div>
 
@@ -76,17 +77,20 @@
 
                     <!-- wind and loses -->
                     <div>
-                        <p>Wins: <span></span></p>
-                        <p>Loses: <span></span></p>
+                        <p>Wins: <span data-computerWins></span></p>
+                        <p>Loses: <span data-computerLoses></span></p>
+                        <p>Ties: <span data-computerTies></span></p>
                     </div>
                 </div>
             </div>
 
             <!-- reset score -->
-            <button class="text-red-400 text-lg sm:text-xl md:text-2xl lg:text-3xl bg-gray-700 py-3 px-6 rounded-lg hover:[text-shadow:0px_0px_2px_white] hover:shadow-[0px_0px_3px_white] hover:shadow-white hover:text-red-500">
+            <button data-resetScore class="text-red-400 text-lg sm:text-xl md:text-2xl lg:text-3xl bg-gray-700 py-3 px-6 rounded-lg hover:[text-shadow:0px_0px_2px_white] hover:shadow-[0px_0px_3px_white] hover:shadow-white hover:text-red-500">
                 Reset Score
             </button>
         </div>
     </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
