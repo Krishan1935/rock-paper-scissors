@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <!-- <link rel="stylesheet" href="output.css"> -->
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -18,15 +19,21 @@
 
             <!-- card container -->
             <div class="flex justify-center items-center gap-4 sm:gap-6 md:gap-8 lg:gap-10 w-full my-2 sm:my-4 md:my-6 lg:my-8">
-                <div class="flex flex-col text-slate-200 font-[500] text-center">
+
+                <!-- rock -->
+                <div class="cursor-pointer flex flex-col text-slate-200 font-[500] text-center hover:scale-105 transition-all duration-100">
                     <img class="w-[70px] sm:w-[100px] md:w-[130px] lg:w-[160px] invert" src="images/rock.jpg" alt="">
                     <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl">Rock</p>
                 </div>
-                <div class="flex flex-col text-slate-200 font-[500] text-center">
+
+                <!-- paper -->
+                <div class="cursor-pointer flex flex-col text-slate-200 font-[500] text-center hover:scale-105 transition-all duration-100">
                     <img class="w-[70px] sm:w-[100px] md:w-[130px] lg:w-[160px] invert" src="images/paper.jpg" alt="">
                     <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl">Paper</p>
                 </div>
-                <div class="flex flex-col text-slate-200 font-[500] text-center">
+
+                <!-- scissors -->
+                <div class="cursor-pointer flex flex-col text-slate-200 font-[500] text-center hover:scale-105 transition-all duration-100">
                     <img class="w-[70px] sm:w-[100px] md:w-[130px] lg:w-[160px] invert" src="images/scissor.jpg" alt="">
                     <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl">Scissors</p>
                 </div>
@@ -37,7 +44,7 @@
                 <!-- your move -->
                 <div class="flex flex-col justify-center items-center gap-1 border-2 min-w-[140px] min-h-[140px] sm:min-w-[160px] sm:min-h-[160px] md:min-w-[180px] md:min-h-[180px] lg:min-w-[200px] lg:min-h-[200px] rounded-md">
                     <h2 class="text-base sm:text-xl md:text-2xl lg:text-3xl text-yellow-200">Your move</h2>
-                    <img class="w-[70px] sm:w-[100px] md:w-[130px] lg:w-[160px] invert" src="images/rock.jpg" alt="">
+                    <img class="w-[70px] sm:w-[100px] md:w-[130px] lg:w-[160px] invert animate-spin" src="images/rock.jpg" alt="">
                 </div>
 
                 <!-- vs -->
@@ -46,7 +53,7 @@
                 <!-- computer move -->
                 <div class="flex flex-col justify-center items-center gap-1 min-w-[140px] min-h-[140px] sm:min-w-[160px] sm:min-h-[160px] md:min-w-[180px] md:min-h-[180px] lg:min-w-[200px] lg:min-h-[200px] border-2 rounded-md ">
                      <h2 class="text-base sm:text-xl md:text-2xl lg:text-3xl text-yellow-200">Computer's Move</h2>
-                     <img class="w-[70px] sm:w-[100px] md:w-[130px] lg:w-[160px] invert" src="images/paper.jpg" alt="">
+                     <img class="w-[70px] sm:w-[100px] md:w-[130px] lg:w-[160px] invert animate-spin" src="images/rock.jpg" alt="">
                 </div>
             </div>
 
