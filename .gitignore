@@ -1,0 +1,6 @@
+main.css
+tailwind.config.js
+postcss.config.js
+package.json   
+package-lock.json
+/node_modules
