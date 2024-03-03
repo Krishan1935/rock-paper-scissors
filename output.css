@@ -675,6 +675,20 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@keyframes fastspin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate();
+  }
+}
+
+.animate-fastspin {
+  animation: fastspin 1s linear infinite;
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);

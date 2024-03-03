@@ -38,8 +38,8 @@ let compMove = '';
 rocks.addEventListener("click",()=>{
     userMove = 'rock';
 
-    userMoveDisplay.classList.add("animate-spin");
-    compMoveDisplay.classList.add("animate-spin");
+    userMoveDisplay.classList.add("animate-fastspin","animate-spin");
+    compMoveDisplay.classList.add("animate-fastspin","animate-spin");
     whowon.innerText = 'V/S'
     displayMove(userMove);
     generateComputerMove()
@@ -50,8 +50,8 @@ rocks.addEventListener("click",()=>{
 paper.addEventListener("click",()=>{
     userMove = 'paper';
 
-    userMoveDisplay.classList.add("animate-spin");
-    compMoveDisplay.classList.add("animate-spin");
+    userMoveDisplay.classList.add("animate-fastspin","animate-spin");
+    compMoveDisplay.classList.add("animate-fastspin","animate-spin");
     whowon.innerText = 'V/S'
     displayMove(userMove);
     generateComputerMove()
@@ -62,8 +62,8 @@ paper.addEventListener("click",()=>{
 scissors.addEventListener("click",()=>{
     userMove = 'scissor';
 
-    userMoveDisplay.classList.add("animate-spin");
-    compMoveDisplay.classList.add("animate-spin");
+    userMoveDisplay.classList.add("animate-fastspin","animate-spin");
+    compMoveDisplay.classList.add("animate-fastspin","animate-spin");
     whowon.innerText = 'V/S';
     displayMove(userMove);
     generateComputerMove()
@@ -77,10 +77,10 @@ function displayMove(move){
     // set user move
     setTimeout(() => {
         userMoveDisplay.src = `images/${move}.jpg`;
-        userMoveDisplay.classList.remove("animate-spin");
+        userMoveDisplay.classList.remove("animate-fastspin","animate-spin");
 
         compMoveDisplay.src = `images/${compMove}.jpg`;
-        compMoveDisplay.classList.remove("animate-spin");
+        compMoveDisplay.classList.remove("animate-fastspin","animate-spin");
     }, 1300);
 }
 
